@@ -325,65 +325,6 @@ header {
   letter-spacing: 0px;
   z-index: -999;
 }
-/*
-.fake-magicwall {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-.fake-magicwall ul {
-  list-style: none;
-  display: flex;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  flex-wrap: wrap;
-}
-.fake-magicwall ul li {
-  width: 405px;
-  height: 180px;
-  position: relative;
-  overflow: hidden;
-  /* by keeping overflow hidden we can see the zooming effect of image */
-/* display: list-item;
-} */
-/*
-.fake-magicwall .magic-wall-item {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  transition: transform 0.5s, opacity 0.5s;
-  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
-}
-
-.fake-magicwall img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.fake-magicwall ul li:hover .magic-wall-item {
-  transform: scale(1.14);
-  -ms-transform: scale(1.4);
-  -webkit-transform: scale(1.14);
-}
-.fake-magicwall ul li a.colorbox {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(/Images/circle.png) no-repeat center;
-  opacity: 0;
-  transition: all 150ms ease-out;
-  -o-transition: all 150ms ease-out;
-  -webkit-transition: all 150ms ease-out;
-  transform: scale(0.2);
-}
-.fake-magicwall ul li:hover a.colorbox {
-  transform: scale(0.6);
-  opacity: 1;
-} */
-/* magic wall ends here */
 
 /* about me sction */
 #section-about {
@@ -399,6 +340,22 @@ header {
 .text-zone-3 p {
   margin-bottom: 15px;
   line-height: 1.5rem;
+  text-align: justify;
+}
+
+#fake-big-me {
+  font-size: 12rem;
+  position: absolute;
+  color: #252323;
+  font-weight: 800;
+  top: 20.9rem;
+  /* right: 1rem; */
+  letter-spacing: -5px;
+  z-index: -999;
+}
+
+.techskills {
+  font-weight: bold;
 }
 
 /* contact section starts here */
@@ -526,6 +483,7 @@ textarea {
   left: 40px;
   padding: 20px;
   backdrop-filter: blur(70%);
+  opacity: 85%;
 }
 
 .map-content span {
@@ -537,7 +495,7 @@ textarea {
 
 /* meadia section for bigger screen */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 980px) {
   header {
     justify-content: flex-end;
     align-items: flex-end;
@@ -618,13 +576,6 @@ textarea {
     left: 500px;
     top: 50px;
   }
-  /* .fake-magicwall {
-    padding-left: 10.1%;
-  }
-  .fake-magicwall ul li {
-    width: 242px;
-    height: 236px;
-  } */
 
   /* about section */
   #section-about {
@@ -641,6 +592,10 @@ textarea {
   }
   .skill-charts {
     margin-right: 20%;
+  }
+  #fake-big-me {
+    top: 2.5rem;
+    right: 1rem;
   }
 
   /* contact sectio */
